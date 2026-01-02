@@ -1,0 +1,283 @@
+.rooms-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.rooms-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  z-index: 0;
+}
+
+.rooms-title-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1600px;
+  margin: 0 auto 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rooms-title {
+  font-family: "MiracleRegular", serif;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #1e2d2a;
+  margin: 0;
+  line-height: 1;
+}
+
+.rooms-subtitle {
+  font-family: "MiracleRegular", serif;
+  font-size: 1rem;
+  color: #1e2d2a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  max-width: 300px;
+  text-align: right;
+  opacity: 0.8;
+}
+
+.rooms-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 100px;
+  align-items: start;
+}
+
+.rooms-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  gap: 60px;
+}
+
+.left-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.small-photo-wrapper {
+  width: 285px;
+  height: 339px;
+  overflow: hidden;
+  margin-left: -200px;
+}
+
+.small-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.center-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10vh;
+}
+.slide-indicator{
+  position: absolute;
+  margin-top: 50vh;
+}
+.room-title {
+  font-family: "MiracleRegular", serif;
+  font-size: 2.8rem;
+  color: #1e2d2a;
+}
+
+.room-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 600px;
+}
+
+.center-indicator {
+  margin-top: 60px;
+  font-size: 1.1rem;
+  color: #999;
+}
+
+.right-block {
+  min-width: 100px;
+}
+
+.left-next {
+  cursor: pointer;
+}
+
+.left-next img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease;
+}
+
+.left-next img:hover {
+  transform: scale(1.1);
+}
+
+.rooms-right {
+  position: relative;
+}
+
+.right-slides {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+margin-left: 10vh;
+
+
+}
+
+.large-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.next-big-button{
+  cursor: pointer;
+    margin-top: 200px;
+    margin-left: -5vh;
+}
+
+ @media (max-width: 992px) {
+  .rooms-content {
+    grid-template-columns: 1fr; 
+    gap: 60px;
+  }
+
+  .rooms-right {
+    order: -1; 
+    margin-bottom: 60px;
+    margin-left: 0;
+  }
+
+  .left-content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .left-block {
+    align-items: flex-start;
+  }
+
+  .center-block {
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .slide-indicator {
+    position: static;
+    margin-top: 40px;
+  }
+
+  .next-big-button {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  .small-photo-wrapper {
+    margin-left: 0;
+  }
+
+  .large-photo-wrapper {
+    margin-left: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .rooms-title {
+    font-size: 3.5rem;
+  }
+
+  .rooms-title-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .rooms-subtitle {
+    text-align: left;
+    max-width: none;
+  }
+
+  .small-photo-wrapper {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 285 / 339; 
+    margin-left: 0;
+  }
+
+  .small-photo {
+    height: auto;
+  }
+
+  .right-slides {
+    height: 60vh;
+    margin-left: 0;
+  }
+
+  .next-big-button {
+    display:none ;
+  }
+
+  .room-title {
+    font-size: 2.5rem;
+  }
+
+  .room-description {
+    font-size: 1rem;
+  }
+
+  .slide-indicator {
+    margin-top: 30px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .rooms-title {
+    font-size: 3rem;
+  }
+
+  .small-photo-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .next-big-button img {
+    width: 60px;
+    height: 60px;
+  }
+}

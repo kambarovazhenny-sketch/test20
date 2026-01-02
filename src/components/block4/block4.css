@@ -1,0 +1,341 @@
+.facilities-section {
+  position: relative;
+  width: 100%;
+  padding: 120px 40px 160px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.facilities-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  z-index: 0;
+}
+
+.facilities-header {
+  position: relative;
+  z-index: 1;
+  max-width: 1600px;
+  margin: 0 auto 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.facilities-subtitle {
+  font-size: 1rem;
+  color: #1e2d2a;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  opacity: 0.8;
+}
+
+.facilities-title {
+  font-family: "MiracleRegular", serif;
+  font-size: 6.5rem;
+  color: #1e2d2a;
+  line-height: 0.9;
+  text-align: center;
+  flex: 1;
+  margin: 0;
+}
+.our{
+    width: 657px;
+height: 390px;
+opacity: 1;
+top: 5053px;
+margin-left: 20%;
+
+}
+
+
+.star{
+    position: absolute;
+    margin-top: 34vh;
+    margin-left: 30%;
+    width: 70.;
+    height: 70.7;
+
+
+}
+
+.badge-photo {
+
+object-fit: cover;
+margin-top: 10vh;  
+width: 443px;
+height: 286px;
+margin-left: 6vh;
+
+
+}
+
+.prem{
+    position: absolute;
+    margin-left: 98vh;
+}
+
+
+.top-description-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 1600px;
+  margin: 0 auto 120px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.small-bar-photo {
+  flex-shrink: 0;
+  width: 400px;
+}
+
+.small-bar-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.facilities-description {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: left;
+}
+
+.facility-slide {
+  position: relative;
+  z-index: 1;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 100px;
+  align-items: end;
+}
+
+.slide-number {
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+  font-size: 4rem;
+  color: #1e2d2a;
+  opacity: 0.2;
+}
+
+.facility-info {
+  grid-column: 1;
+  align-self: end;
+}
+
+.facility-name {
+  font-family: "MiracleRegular", serif;
+  font-size: 4rem;
+  color: #1e2d2a;
+  margin: 0 0 40px 0;
+  line-height: 1;
+}
+
+.facility-desc {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 520px;
+}
+
+.facility-photo {
+  grid-column: 2;
+  align-self: end;
+}
+
+.facility-large {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.down-arrow-button {
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.down-arrow-button img {
+  width: 60px;
+  height: 60px;
+  transform: rotate(810deg)
+}
+
+
+@media (max-width: 1200px) {
+  .our {
+    width: 500px;
+    height: auto;
+    margin-left: 15%;
+  }
+
+  .prem {
+    margin-left: 80vh;
+  }
+
+  .badge-photo {
+    width: 350px;
+    height: auto;
+    margin-left: 4vh;
+  }
+
+  .top-description-wrapper {
+    gap: 60px;
+  }
+
+  .small-bar-photo {
+    width: 350px;
+  }
+
+  .facility-name {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .facilities-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+  }
+    
+  .our {
+    width: 80%;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .prem {
+    display: none;
+  }
+
+  .badge-photo {
+    display: none;
+  }
+
+  .star {
+    position: static;
+    margin: 40px auto;
+  }
+
+  .top-description-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .small-bar-photo {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .facilities-description {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .facility-slide {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .slide-number {
+    position: static;
+    justify-self: center;
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+  }
+
+  .facility-info {
+    grid-column: 1;
+    text-align: center;
+  }
+
+  .facility-photo {
+    grid-column: 1;
+    order: -1; 
+  }
+
+  .facility-desc {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .down-arrow-button {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px;
+  }
+
+  .next-big-button {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .our {
+    width: 90%;
+  }
+
+  .badge-photo {
+    width: 250px;
+  }
+
+  .facility-name {
+    font-size: 3rem;
+  }
+
+  .facilities-description {
+    font-size: 1rem;
+  }
+
+  .small-bar-photo {
+    max-width: 400px;
+  }
+
+  .next-big-button img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .down-arrow-button img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .our {
+    width: 100%;
+  }
+
+  .facility-name {
+    font-size: 2.5rem;
+  }
+
+  .slide-number {
+    font-size: 3rem;
+  }
+}

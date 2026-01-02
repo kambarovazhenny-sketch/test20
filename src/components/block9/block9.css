@@ -1,0 +1,183 @@
+.block9-wrapper {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+
+.superior-twin-section {
+  background: transparent; 
+}
+
+.hero-section {
+  position: relative;
+  height: 80vh;
+  background-image: url('./block9img/bk.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Miracle', sans-serif;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.page-title {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 60px;
+  color: #ffd700;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Miracle', sans-serif;
+}
+
+.eco-subtitle {
+  position: absolute;
+  top: 280px;
+  left: 50px;
+  font-size: 18px;
+  color: #ffd700;
+  text-transform: uppercase;
+  font-family: 'Miracle', sans-serif;
+}
+
+.book-button {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  background: #ffd700;
+  color: #000;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.info-section {
+  background: #263530;
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.since-badge {
+  margin-bottom: 50px;
+}
+
+.since-badge span {
+  background: #334433;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Miracle', sans-serif;
+}
+
+.unique-design-text {
+  font-size: 25px;
+  max-width: 400px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.room-description-b9 {
+  font-size: 16px; 
+  max-width: 400px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+}
+
+
+.premier-standard-section {
+  position: relative;
+  background-color: #263530;
+  padding: 100px 0 150px;
+  text-align: center;
+}
+
+.wave-top {
+  position: absolute;
+  top: -1px; 
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: #263530;
+  clip-path: ellipse(150% 100% at 50% 0%);
+}
+
+.page-title-9 {
+  font-family: 'Miracle', sans-serif;
+  font-size: 48px;
+  color: #ffd700;
+  margin: 0 0 80px;
+}
+
+.room-image-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.room-image-b9 {
+  width: 100%;
+  height: 80vh;
+  max-height: 800px;
+  background-image: url('./block9img/img.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.wave-bottom {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: #1e2d24;
+  clip-path: ellipse(150% 100% at 50% 100%);
+}
+
+/* ========== Адаптивность ========== */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .unique-design-text,
+  .room-description-b9 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title { font-size: 48px; }
+  .eco-subtitle { top: 220px; font-size: 16px; }
+  .book-button {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 60px;
+  }
+
+  .page-title-9 { font-size: 36px; }
+
+  .room-image-b9 { height: 60vh; }
+
+  .wave-top, .wave-bottom { height: 80px; }
+}
